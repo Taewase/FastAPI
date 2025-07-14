@@ -1,2 +1,2 @@
 [tool.poetry.dependencies]
-python = ">=3.11,<3.12"
+python = ">=3.13,<3.14"  # optional, or just use "*"
