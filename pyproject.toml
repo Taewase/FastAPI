@@ -1,2 +1,4 @@
 [tool.poetry.dependencies]
 python = ">=3.13,<3.14"  # optional, or just use "*"
+uvicorn = {extras = ["standard"], version = "^0.22.0" }
+
