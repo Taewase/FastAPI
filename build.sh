@@ -9,3 +9,4 @@ export CRYPTOGRAPHY_DONT_BUILD_RUST=1
 
 # --- Install dependencies without build isolation (avoids rust/toolchain issues) ---
 pip install --no-build-isolation -r requirements.txt
+python -m pip install distutils
