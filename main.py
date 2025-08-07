@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
-from fastapi.middleware.cors import CORSMiddleware  # Add this import
-from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel, ConfigDict
 import numpy as np
 import pickle
 import os
@@ -29,6 +29,8 @@ FEATURES = [
 # Request Body Schema
 # ------------------------------
 class SRQ20Input(BaseModel):
+    model_config = ConfigDict(extra='forbid')
+    
     headache: int
     appetite: int
     sleep: int
