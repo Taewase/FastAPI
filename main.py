@@ -60,7 +60,7 @@ app = FastAPI(title="SRQ-20 Depression Detection API", version="1.0")
 # Add CORS middleware here - right after creating the app
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:5174", "http://localhost:3000"],  # React dev servers
+    allow_origins=["http://localhost:5173", "http://localhost:5174", "http://localhost:3000", "https://depression-system-hazel.vercel.app"],  # React dev servers
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
